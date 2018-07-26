@@ -10,6 +10,14 @@ body {
   font-style: normal;
 }
 
+h4 {
+  letter-spacing: 2px;
+}
+
+p {
+  letter-spacing: 1px;
+}
+
 nav {
   position: fixed;
   z-index: 100;
