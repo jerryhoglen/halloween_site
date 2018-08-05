@@ -22,11 +22,14 @@
     </ul>
   </nav>
 
-  <audio preload="auto" loop="loop" autoplay="autoplay">
+  <iframe src="audio/halloween_theme.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+</iframe>
+
+  <!--<audio preload="auto" loop="loop" autoplay="autoplay">
       <source src="audio/halloween_theme.mp3" type="audio/mp3" />
       <source src="audio/halloween_theme.ogg" type="audio/ogg" />
       <source src="audio/halloween_theme.wav" type="audio/wav" />
-  </audio>
+  </audio> -->
 
   <section class="hero_section">
     <div class="intrinsic-container intrinsic-container-16x9">
@@ -105,6 +108,10 @@
       <li>&copy;2018 Universal Pictures</li>
     </ul>
   </footer>
+  <script>var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    if(!isChrome){
+      $('#iframeAudio').remove()
+    }</script>
 
 </body>
 
