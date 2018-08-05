@@ -22,11 +22,10 @@
     </ul>
   </nav>
 
-  <iframe src="audio/halloween_theme.mp3" allow="autoplay" style="display:none" id="iframeAudio" /
-  >
+  <iframe src="audio/halloween_theme.mp3" allow="autoplay" style="display:none" id="iframeAudio">
 
 
-  <audio preload="auto" loop="loop" autoplay="autoplay">
+  <audio preload="auto" loop="loop" autoplay="autoplay" id="playAudio">
       <source src="audio/halloween_theme.mp3" type="audio/mp3" />
       <source src="audio/halloween_theme.ogg" type="audio/ogg" />
       <source src="audio/halloween_theme.wav" type="audio/wav" />
@@ -109,7 +108,7 @@
       <li>&copy;2018 Universal Pictures</li>
     </ul>
   </footer>
-  
+
   <script>
     var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
     if (!isChrome) {
